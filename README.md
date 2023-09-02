@@ -1,7 +1,6 @@
-```markdown
-# Project Name
+# PhonePe Payment Gateway Integration
 
-Description of your project.
+This repository serves as a boilerplate for integrating the PhonePe payment gateway with a Node.js backend and a React frontend. The goal of this project is to provide a starting point for developers looking to implement PhonePe payment functionality into their applications. 
 
 ## Table of Contents
 
@@ -13,45 +12,32 @@ Description of your project.
   - [For Development](#for-development)
   - [For Production](#for-production)
 - [Running the Frontend](#running-the-frontend)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
-This repository contains a Node.js backend server and a React frontend for [briefly describe the purpose of your project]. The backend is located in the `server` directory, and the React frontend is located in the `client` directory.
+The backend, located in the `server` directory, handles the integration with the PhonePe API and manages payment-related processes. On the other hand, the React frontend, situated in the `client` directory, offers a user interface for initiating and processing payments.
+
+By using this boilerplate, developers can streamline the integration of PhonePe payments into their Node.js projects, reducing development time and effort while ensuring a robust payment processing system.
 
 ## Environment Variables
 
-### .env.dev
-
 - `PORT=3001`
 - `PHONEPE_KEY=YOUR_PHONEPE_KEY`
 - `PHONEPE_KEY_INDEX=YOUR_PHONEPE_KEY_INDEX`
 - `PHONEPE_MERCHANT_ID=YOUR_PHONEPE_MERCHANT_ID`
-- `PHONEPE_CALLBACK_URL=http://localhost:3000/api/callback`
-- `PHONEPE_FRONTEND_REDIRECT_URL=http://localhost:3000/payment`
-- `PHONEPE_REDIRECT_URL=http://localhost:3000/payment`
-- `PHONEPE_BASE_URL=https://api-preprod.phonepe.com/apis/hermes`
-
-### .env.prod
-
-- `PORT=3001`
-- `PHONEPE_KEY=YOUR_PHONEPE_KEY`
-- `PHONEPE_KEY_INDEX=YOUR_PHONEPE_KEY_INDEX`
-- `PHONEPE_MERCHANT_ID=YOUR_PHONEPE_MERCHANT_ID`
-- `PHONEPE_CALLBACK_URL=http://localhost:3000/api/callback`
-- `PHONEPE_FRONTEND_REDIRECT_URL=http://localhost:3000/payment`
-- `PHONEPE_REDIRECT_URL=http://localhost:3000/payment`
-- `PHONEPE_BASE_URL=https://api.phonepe.com/apis/hermes`
+- `PHONEPE_FRONTEND_REDIRECT_URL=YOUR_FRONTEND_REDIRECT_URL`
+- `PHONEPE_REDIRECT_URL=YOUR_BACKEND_REDIRECT_URL`
+- `PHONEPE_BASE_URL=ENV_BASED_PHONEPE_BASE_URL`
 
 **Note:** If you're using the dev environment, please use the following `PHONEPE_BASE_URL` value:
 
+### .env.dev
 ```
 PHONEPE_BASE_URL=https://api-preprod.phonepe.com/apis/hermes
 ```
 
 For production, use the following `PHONEPE_BASE_URL` value:
+### .env.prod
 
 ```
 PHONEPE_BASE_URL=https://api.phonepe.com/apis/hermes
@@ -100,15 +86,3 @@ npm start
 # Build the production-ready frontend [Only for Production]
 npm run build
 ```
-
-## Usage
-
-[Provide usage instructions and any additional information about using your project here.]
-
-## Contributing
-
-[Explain how others can contribute to your project, including guidelines for submitting pull requests and reporting issues.]
-
-## License
-
-[Specify the license for your project. For example, MIT License, Apache License 2.0, etc.]

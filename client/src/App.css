@@ -1,0 +1,61 @@
+.phonepe {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.phonepe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.phonepe-heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.phonepe-button {
+  background-color: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.phonepe-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phonepe-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.success {
+  color: #4caf50;
+  font-size: 48px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.failed {
+  color: #f44336;
+  font-size: 48px;
+  margin: 0;
+  text-transform: uppercase;
+}
